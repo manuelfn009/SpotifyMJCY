@@ -1,10 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Damion&family=Homenaje&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Mohave:wght@300&family=Oswald:wght@200&family=Space+Grotesk&display=swap');
+
+:root {
+    --color-1: #FA6900;
+    --color-2: #FFFFFF;
+    --color-3: #F38630;
+    --color-4: #EBE4E6;
+    --color-5: #128C80;
+    --color-6: #15a597;
+    --color-7: #1bc0b0;
+  }
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
+    color: white;
 }
 body{
-    background-color: #EBE4E6;
+    overflow: hidden;
+}
+.inicio{
+    background-color: var(--color-5);
+    width: 72vw;
+    height: 100vh;
+    margin-left: 28%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    border-radius: 10px;
+}
+.imagen{
+    border-radius: 10px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px ;
+    margin-top: 20px;
+    font-size: 10px;
+    width: 17%;
+    padding: 15px;
+    height: 250px;
+    background-color: var(--color-6);
+}
+.imagen h2{
+    color: #dcd;
 }
 
+.imagen:hover{
+    background-color: #1bc0b0;
+    cursor: pointer;
+}
