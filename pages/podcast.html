@@ -4,12 +4,15 @@
   --color-2: #FFFFFF;
   --color-3: #F38630;
   --color-4: #EBE4E6;
+  --color-5: #128C80;
+  --color-6: #15a597;
 }
 @import url('https://fonts.googleapis.com/css2?family=Damion&family=Homenaje&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Mohave:wght@300&family=Oswald:wght@200&family=Space+Grotesk&display=swap');
 *{
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
+    color: var(--color-2);
 }
 
 .secciones-podcasts{
@@ -19,7 +22,7 @@
 main{
     width: 100%;
     height: 100%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
     gap: 2rem;
 }
 
@@ -34,7 +37,22 @@ section.secciones-podcasts{
     width: 100%;
     height: 10%;
     justify-content: space-between;
+    user-select: none;
 } 
+
+.secciones-podcasts h3{
+    font-size: 1.6em;
+}
+
+.secciones-podcasts h4{
+    font-size: 1em;
+    color: var(--color-4);
+    cursor: pointer;
+}
+
+.secciones-podcasts h4:hover{
+    text-decoration: underline;
+}
 
 .centrado{
     display: flex;
@@ -52,12 +70,13 @@ section.secciones-podcasts{
 }
 
 .carta-podcast{
-    background-color: var(--color-2);
+    background-color: var(--color-6);
     border-radius: 10px;
     height: 100%;
     gap: 1rem;
     padding: .5rem;
     justify-content: flex-start;
+    padding-bottom: 1rem;
 }
 
 .carta-podcast img{
@@ -67,10 +86,11 @@ section.secciones-podcasts{
 
 .carta-podcast h5{
     width: 100%;
-    font-size: 1em;
+    font-size: .9em;
 }
 
 .carta-podcast h6{
+    color: var(--color-4);
     width: 100%;
     font-size: .7em;
 
@@ -80,19 +100,29 @@ section.secciones-podcasts{
 <main class="columna centrado">
     <section class="secciones-podcasts columna centrado">
         <header class="centrado">
-            <h3>Podcasts mas escuchados</h3>
-            <h4>Mostrar mas</h4>
+            <h3>Podcasts más escuchados</h3>
+            <h4>Mostrar más</h4>
         </header>
         <div class="container-cartas centrado">
             <div class="carta-podcast centrado columna">
-                <img src="https://i.scdn.co/image/ab67656300005f1fc2351164a0cda7ecbe34584f">
-                <h5>perfectamente</h5>
-                <h6>Auther</h6>
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac">
+                <h5>The Wild Project</h5>
+                <h6>Jordi Wild</h6>
             </div>
             <div class="carta-podcast centrado columna">
-                <img>
-                <h5>perfectamente</h5>
-                <h6>Auther</h6>
+                <img src="https://i.scdn.co/image/ab67656300005f1fc2351164a0cda7ecbe34584f">
+                <h5>Perfectamente</h5>
+                <h6>Aretha Fusté</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1fa0d1decbc0cb8dc40a8776d3">
+                <h5>Tómatelo con Vino</h5>
+                <h6>Tómatelo con Vino</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f3c5a75e1765779b835bf8c80">
+                <h5>El podcast de mariana...</h5>
+                <h6>Mariana Rojas Estopé </h6>
             </div>
         </div>
 
