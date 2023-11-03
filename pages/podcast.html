@@ -23,7 +23,7 @@ main{
     width: 100%;
     height: 100%;
     background-color: var(--color-5);
-    gap: 2rem;
+    gap: 4rem;
 }
 
 section.secciones-podcasts{
@@ -34,7 +34,7 @@ section.secciones-podcasts{
 }
 
 .secciones-podcasts header{
-    width: 100%;
+    width: 95%;
     height: 10%;
     justify-content: space-between;
     user-select: none;
@@ -70,14 +70,19 @@ section.secciones-podcasts{
 }
 
 .carta-podcast{
-    background-color: var(--color-6);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     height: 100%;
     gap: 1rem;
     padding: .5rem;
     justify-content: flex-start;
     padding-bottom: 1rem;
+    transition: background-color .2s;
 }
+.carta-podcast:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 .carta-podcast img{
     height: 10rem;
@@ -130,16 +135,30 @@ section.secciones-podcasts{
     </section>
     <section class="secciones-podcasts columna centrado">
         <header class="centrado">
-            <h3>Podcasts mas escuchados</h3>
+            <h3>Últimos estrenos</h3>
             <h4>Mostrar mas</h4>
         </header>
-        <div class="container-cartas">
-            <div class="carta-podcast">
-                <img>
-                <h5>perfectamente</h5>
-                <h6>Auther</h6>
+        <div class="container-cartas centrado">
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f9ec4dc97b4d3e1d6160d7b7f">
+                <h5>No son once, co...</h5>
+                <h6>AS Audio</h6>
             </div>
-        </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f3bf7f19ff4d0d4ffb83cf06b">
+                <h5>Explicao</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f75264acacd65e4c81ded2412">
+                <h5>Dando vueltas</h5>
+                <h6>Celia Castle</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f259ffa5f37133dfeb405ae4b">
+                <h5>2+1 by Draftead...</h5>
+                <h6>Spotify Studios</h6>
+            </div>
         
     </section>
 </main>
