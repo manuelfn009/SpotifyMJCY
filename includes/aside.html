@@ -18,10 +18,18 @@
             width:100%;
             border-radius: 10px;
             background-color: #EBE4E6;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            padding-left: 10px;
         }
-            img#logo{
-                width: 100px;
-                height: 100px;
+            #logo{
+                width: 50px;
+                height: 50px;
+            }
+            #iconoInicio{
+                width: 30px;
+                height: 30px;
             }
             #inicio{
                 color: #F38630;
@@ -29,6 +37,10 @@
             }
             #inicio:hover{
                 color: #FA6900;
+            }
+            #iconoBuscar{
+                width: 30px;
+                height: 30px;
             }
             #buscar{
                 color: #F38630;
@@ -43,7 +55,12 @@
             background-color: #EBE4E6;
             padding-top: 2px;
             padding-bottom: 15px;
+            padding-left: 8px;
         }
+            #iconoBiblioteca{
+                width: 30px;
+                height: 30px;
+            }
             #tuBiblioteca{
                 color: #F38630;
                 cursor:pointer;
@@ -57,13 +74,19 @@
             margin-right: 20px;
             margin-left: 5px;
             margin-bottom: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-bottom: 10px;
             font-size: 15px;
         }
         #botonCrearLista{
             border:none;
             cursor:pointer;
-            height: 25px;
-            width: 90px;
+            height: 20px;
+            width: 80px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
             color:#FFF;
             text-align: center;
             background-color:#F38630;
@@ -79,13 +102,19 @@
             background-color: #FFF;
             margin-right: 20px;
             margin-left: 5px;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-bottom: 10px;
             font-size: 15px;
         }
         #botonPodcasts{
             border:none;
             cursor:pointer;
-            height: 35px;
-            width: 90px;
+            height: 20px;
+            width: 130px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
             color:#FFF;
             text-align: center;
             background-color:#F38630;
@@ -95,6 +124,29 @@
             transition: transform 0.5s;
             transform: scale(1.1);
         }
+        .footer{
+            margin-top: 25px;
+            font-size: 11px;
+            background-color: #EBE4E6;
+
+        }
+        #botonIdioma{
+            color:#FA6900;
+            border: 1px solid;
+            border-color: #000000;
+            cursor:pointer;
+            height: 20px;
+            width: 120px;
+            padding-top: 5px;
+            text-align: center;
+            background-color: #EBE4E6;
+            border-radius: 30px;
+        }
+        #botonIdioma:hover{
+            transition: transform 0.1s;
+            transform: scale(1.1);
+            border-color: #FA6900;
+        }
 
 
 </style>
@@ -102,23 +154,24 @@
         <div class="aside">
                 <div class="apartados">
                     <img id="logo" url="https://icones.pro/wp-content/uploads/2021/03/icone-de-la-musique-orange.png">
-                    <p id="inicio">Inicio</p>
-                    <p id="buscar">Buscar</p>
+                    <p id="inicio"><img id="iconoInicio" url="https://cdn.icon-icons.com/icons2/1673/PNG/512/homeoutline_110882.png"><strong> Inicio</strong></p>
+                    <p id="buscar"><img id="iconoBuscar" url="https://cdn-icons-png.flaticon.com/512/2531/2531409.png"><strong> Buscar</strong></p>
                 </div>
                 <div class="biblioteca">
-                    <p id="tuBiblioteca">Tu biblioteca</p>
+                    <p id="tuBiblioteca"><img id="iconoBiblioteca" url="https://cdn-icons-png.flaticon.com/512/2908/2908601.png"><strong> Tu biblioteca</strong></p>
                     <div class="crearLista">Crea tu primera lista
-                        <p>Es muy facil, y te echaremos una mano.</p>
+                        <p>Es muy fácil, y te echaremos una mano.</p>
                         <div id="botonCrearLista">Crear lista</div>
                     </div>
                     <div class="explorarPodcasts">Encuentra podcasts que quieras seguir
                         <p>Te avisaremos cuando salgan nuevos episodios</p>
-                        <div id="botonPodcasts">Explorar podcasts</div>
-                        Legal • Centro de Privacidad • Politica de privacidad
-                    <p>Configuracion de cookies • Informacion sobre los anuncios</p>
-                    <p>Accesibilidad</p>
-                    <p>Cookies</p>
-                    <div id="botonIdioma">Español de España</div>
+                        <div id="botonPodcasts">Explorar pódcasts</div>
+                    </div>
+                    <div class="footer">Legal • Centro de Privacidad • Politica de privacidad
+                        <p>Configuracion de cookies • Informacion sobre los anuncios</p>
+                        <p>Accesibilidad</p>
+                        <p>Cookies</p>
+                        <div id="botonIdioma"><strong>Español de España</strong></div>
                     </div>
                 </div>
         </div>
