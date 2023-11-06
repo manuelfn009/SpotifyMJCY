@@ -16,13 +16,13 @@
     body{
         display: flex;
         justify-content: flex-end;
-        background-color: #FA6900;
+        background-color: #128C80;
         width: 100%;
         height: 100%;
     }
 
     .header {
-        background-color: #F38630;
+        background-color: #15a597;
         width: 100%;
         height: 10%;
         border-radius: 10px;
@@ -37,6 +37,10 @@
         align-items: center;
         color: rgb(239, 239, 239);
         margin-left: 20px;
+    }
+
+    .icons-left h1:hover {
+        transform: scale(1.1);
     }
     
     .input {
@@ -78,9 +82,13 @@
         color: #FFFFFF;
     }
 
+    .button-registrar:active {
+        transform: scale(0.98);
+    }
+
     .button-iniciar {
         background-color: var(--color-2);
-        color: var(--color-1);
+        color: #128C80;
         border: none;
         height: 50px;
         border-radius: 30px;
@@ -94,6 +102,10 @@
     .button-iniciar:hover {
         transform: scale(1.02);
         background-color: #ffffffec;
+    }
+
+    .button-iniciar:active {
+        transform: scale(0.98);
     }
 </style>
 <body>
