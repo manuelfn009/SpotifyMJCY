@@ -18,8 +18,6 @@
 }
 body{
     overflow: hidden;
-}
-.inicio{
     background-color: var(--color-5);
     width: 72vw;
     height: 100vh;
@@ -28,9 +26,16 @@ body{
     display: flex;
     flex-direction: column;
 }
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
 .imagenes{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 img{
     border-radius: 10px;
@@ -38,6 +43,7 @@ img{
 .imagen{
     border-radius: 10px;
     display: flex;
+    position: relative;
     place-content: center;
     align-items: center;
     flex-direction: column;
@@ -56,4 +62,48 @@ img{
 .imagen:hover{
     background-color: #1bc0b0;
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    text-align: left;
+}
+a:hover{
+    text-decoration: underline;
+}
+i{
+   color: transparent;
+   position: absolute;
+   height: 40px;
+   width: 40px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.imagen:hover i{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 110px;
+    padding-left: 18px;
+    padding-top: 15px;
+    font-size: 30px;
+    animation: subir 0.5s;
+}
+
+i:hover{
+    transform: scale(1.05);
+}
+
+@keyframes subir {
+    0%{
+        transform:translateY(20px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
 }
