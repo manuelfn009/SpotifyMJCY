@@ -1,11 +1,189 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcasts</title>
-</head>
-<body>
+<style>
+    :root {
+  --color-1: #FA6900;
+  --color-2: #FFFFFF;
+  --color-3: #F38630;
+  --color-4: #EBE4E6;
+  --color-5: #128C80;
+  --color-6: #15a597;
+}
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Homenaje&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Mohave:wght@300&family=Oswald:wght@200&family=Space+Grotesk&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    color: var(--color-2);
+}
+
+.secciones-podcasts{
+    height: 10rem;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-5);
+    gap: 4rem;
+}
+
+section.secciones-podcasts{
+    height: 18rem;
+    width: 98%;
+    gap: 1.5rem;
+
+}
+
+.secciones-podcasts header{
+    width: 95%;
+    height: 10%;
+    justify-content: space-between;
+    user-select: none;
+} 
+
+.secciones-podcasts h3{
+    font-size: 1.6em;
+}
+
+.secciones-podcasts h4{
+    font-size: 1em;
+    color: var(--color-4);
+    cursor: pointer;
+}
+
+.secciones-podcasts h4:hover{
+    text-decoration: underline;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna{
+    flex-direction: column;
+}
+
+.container-cartas{
+    height: 90%;
+    gap: 1rem;
+}
+
+.carta-podcast{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 100%;
+    gap: 1rem;
+    padding: .5rem;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+    transition: background-color .2s;
+}
+.carta-podcast:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.carta-podcast img{
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.carta-podcast h5{
+    width: 100%;
+    font-size: .9em;
+}
+
+.carta-podcast h6{
+    color: var(--color-4);
+    width: 100%;
+    font-size: .7em;
+
+}
+
+</style>
+<main class="columna centrado">
+    <section class="secciones-podcasts columna centrado">
+        <header class="centrado">
+            <h3>Podcasts más escuchados</h3>
+            <h4>Mostrar más</h4>
+        </header>
+        <div class="container-cartas centrado">
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac">
+                <h5>The Wild Project</h5>
+                <h6>Jordi Wild</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc2351164a0cda7ecbe34584f">
+                <h5>Perfectamente</h5>
+                <h6>Aretha Fusté</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1fa0d1decbc0cb8dc40a8776d3">
+                <h5>Tómatelo con Vino</h5>
+                <h6>Tómatelo con Vino</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f3c5a75e1765779b835bf8c80">
+                <h5>El podcast de mariana...</h5>
+                <h6>Mariana Rojas Estopé </h6>
+            </div>
+        </div>
+    </section>
+    <section class="secciones-podcasts columna centrado">
+        <header class="centrado">
+            <h3>Últimos estrenos</h3>
+            <h4>Mostrar mas</h4>
+        </header>
+        <div class="container-cartas centrado">
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f9ec4dc97b4d3e1d6160d7b7f">
+                <h5>No son once, co...</h5>
+                <h6>AS Audio</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f3bf7f19ff4d0d4ffb83cf06b">
+                <h5>Explicao</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f75264acacd65e4c81ded2412">
+                <h5>Dando vueltas</h5>
+                <h6>Celia Castle</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f259ffa5f37133dfeb405ae4b">
+                <h5>2+1 by Draftead...</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+    </section>
     
-</body>
-</html>
+    <section class="secciones-podcasts columna centrado">
+        <header class="centrado">
+            <h3>Categorías</h3>
+            <h4>Mostrar mas</h4>
+        </header>
+        <div class="container-cartas centrado">
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg">
+                <h5>No son once, co...</h5>
+                <h6>AS Audio</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/3e8acf88a1ae408d85f65630d90b1d73.jpeg">
+                <h5>Explicao</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/d951a2d590194722bbfffe2a99ab0e45.jpeg">
+                <h5>Dando vueltas</h5>
+                <h6>Celia Castle</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/ddc7cce63cdf49b5a632fb90872929e3.jpeg">
+                <h5>2+1 by Draftead...</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+    </section>
+</main>
