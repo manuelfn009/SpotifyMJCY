@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMG/spotify.png">
+    <title>Iniciar sesión - Spotify</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Damion&family=Homenaje&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Mohave:wght@300&family=Oswald:wght@200&family=Space+Grotesk&display=swap');
+
+        :root {
+            --color-1: #FA6900;
+            --color-2: #FFFFFF;
+            --color-3: #F38630;
+            --color-4: #EBE4E6;
+            --color-5: #128C80;
+            --color-6: #15a597;
+            --color-7: #1bc0b0;
+        }
+
+        body {
+            color:white;
+            overflow: hidden;
+            font-family: 'Kanit', sans-serif;
+            background-color: var(--color-5);
+            width: 100vw;
+            height: 100vh;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main{
+            width: 40%;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #15a597;
+        }
+        .botonIS{          
+            display: flex;  
+            background-color: var(--color-5);
+            border: 1px solid #bbb8b9;
+            color:#bbb8b9;
+            width: 300px;
+            justify-content: space-around;
+        }
+        button{
+            padding: 10px;
+            border-radius: 50px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .botonIS:hover{
+            border: 1px solid #fff;
+            color:#fff;
+            cursor: pointer;
+        }
+        hr{
+            width: 200px;
+        }
+        .iS{
+            background-color: black;
+            color: #1bc0b0;
+            border:none;
+        }
+        .iS:hover{
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+        input[type="text"]{
+            background-color: #bbb8b9;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Inicia sesión en Spotify</h1>
+        <button class="botonIS"><img src="../IMG/google.png" height="20" width="20">Continuar con Google</button>
+        <button class="botonIS"><img src="../IMG/facebook.png" height="20" width="20">Continuar con Facebook</button>
+        <button class="botonIS"><img src="../IMG/apple.png" height="20" width="20">Continuar con Apple</button>
+        <hr>
+        <input type="text" placeholder="Correo electrónico o nombre de usuario">
+        <input type="password" placeholder="Contraseña">
+        <input type="checkbox"><span>Recuérdame</span>
+        <button class="iS">Iniciar sesión</button>
+        <a href="#">¿Se te ha olvidado la contraseña?</a>
+        <hr>
+        <span>No tienes cuenta</span><a href="#"> Suscribete a Spotify</a>
+    </main>
+</body>
+
+</html>
