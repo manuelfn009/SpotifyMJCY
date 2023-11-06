@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar</title>
+</head>
+<style>
+    :root {
+    --color-1: #FA6900;
+    --color-2: #FFFFFF;
+    --color-3: #F38630;
+    --color-4: #EBE4E6;
+    --color-5: #128C80;
+    --color-6: #15a597;
+    }
+
+    body {
+        width: 72%;
+        height: 100%;
+        margin-left: 28%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #128C80;
+        color: white;
+    }
+
+    .container-explorar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .explorar {
+        width: 150px;
+        height: 160px;
+        background-color: rgb(255, 174, 25);
+        margin-right: 22px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 12px;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        box-shadow: 0 0 10px rgb(96, 96, 96);
+    }
+
+    .explorar:hover {
+        cursor: pointer;
+        transform: scale(1.04);
+    }
+
+    .img-podcast {
+        width: 100px;
+        height: 100px;
+        rotate: 25deg;
+        margin-top: 60px;
+        margin-left: 85px;
+    }
+</style>
+<body>
+    <div class="container">
+        <p style="font-size: 20px; font-weight: bolder;">Explorar todo</p>
+        <div class="container-explorar">
+            <div class="explorar" style="background-color: #2d9779; overflow: hidden;">Podcast <img class="img-podcast" src="Images/podcast.jpeg" alt=""></div>
+            <div class="explorar" style="background-color: #1E3264;">Especialmente para ti</div>
+            <div class="explorar" style="background-color: #8D67AB;">Lista de éxitos</div>
+            <div class="explorar" style="background-color: #E8115B;">Novedades</div>
+            <div class="explorar" style="background-color: #8D67AB;">Descubrir</div>
+            <div class="explorar" style="background-color: #7358FF;">Eventos en directo</div>
+            <div class="explorar" style="background-color: #E1118B;">Latina</div>
+            <div class="explorar" style="background-color: #F037A5;">Estado de animo</div>
+            <div class="explorar" style="background-color: #9CF0E1;">Pop</div>
+            <div class="explorar" style="background-color: #D7F27D;">Flamenco</div>
+            <div class="explorar" style="background-color: #8D67AB;">Relax</div>
+            <div class="explorar" style="background-color: #7358FF;">Rock</div>
+            <div class="explorar" style="background-color: #7358FF;">Ejercicio</div>
+            <div class="explorar" style="background-color: #AF2896;">Hip Hop</div>
+            <div class="explorar" style="background-color: #EB1E32;">Dance y electronica</div>
+        </div>
+    </div>
+</body>
+</html>

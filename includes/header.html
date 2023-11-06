@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+</head>
+<style>
+    :root {
+        --color-1: #FA6900; 
+        --color-2: #FFFFFF; 
+        --color-3: #F38630; 
+        --color-4: #EBE4E6; 
+    }
+
+    body{
+        display: flex;
+        justify-content: flex-end;
+        background-color: #128C80;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        background-color: #15a597;
+        width: 100%;
+        height: 10%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }   
+
+    .icons-left {
+        display: flex;
+        align-items: center;
+        color: rgb(239, 239, 239);
+        margin-left: 20px;
+    }
+
+    .icons-left h1:hover {
+        transform: scale(1.1);
+    }
+    
+    .input {
+        height: 35px;
+        width: 290px;
+        border-radius: 30px;
+        border: none;
+        padding: 5px;
+        background-color: rgba(239, 239, 239, 0.562);
+        text-align: center;
+    }
+
+    .input:hover {
+        background-color: rgba(239, 239, 239, 0.642);
+    }
+
+    .icons-left h1 {
+        margin-right: 20px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .buttons-container {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .button-registrar {
+        color: #ffffffda;
+        border: none;
+        padding: 10px 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button-registrar:hover {
+        color: #FFFFFF;
+    }
+
+    .button-registrar:active {
+        transform: scale(0.98);
+    }
+
+    .button-iniciar {
+        background-color: var(--color-2);
+        color: #128C80;
+        border: none;
+        height: 50px;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .button-iniciar:hover {
+        transform: scale(1.02);
+        background-color: #ffffffec;
+    }
+
+    .button-iniciar:active {
+        transform: scale(0.98);
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="icons-left">
+            <h1><</h1>
+            <h1>></h1>
+            <input class="input" type="text" placeholder="¿Que te apetece escuchar?">
+        </div>
+        <div class="buttons-container">
+            <h3 class="button-registrar">Regístrate</h3>
+            <button class="button-iniciar">Iniciar sesión</button>
+        </div>
+    </header>
+</body>
+</html>
