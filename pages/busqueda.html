@@ -29,6 +29,8 @@
         color: white;
         display: flex;
         overflow: hidden;
+        gap: 1rem;
+        padding: .5rem;
     }
 
     main {
@@ -38,12 +40,21 @@
         width: 100%;
         height: auto;
         flex-direction: column;
+        gap: 2rem;
     }
 
+    .container p {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .container p, .container-explorar {
+        margin-left: 5rem;
+    }
     .container-explorar {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        
     }
 
     .explorar {
@@ -59,6 +70,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bolder;
         box-shadow: 0 0 10px rgb(96, 96, 96);
+        transition: .5s;
     }
 
     .explorar:hover {
