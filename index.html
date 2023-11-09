@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="styleI.css">
     <link rel="icon" href="IMG/spotify.png">
     <script src="https://kit.fontawesome.com/761c44b7a7.js" crossorigin="anonymous"></script><!--Botones-->
+    <script src="https://unpkg.com/htmlincludejs"></script>
     <title>Spotify</title>
 </head>
 
 <body>
-
-    <div class="inicio">
+    <include src="includes/aside.html" class="aside"></include>
+    <main>
+    <include src="includes/header.html"></include>
+    <div class="inicio"></div>
         <div class="top">
             <h1>Listas de Spotify</h1>
             <a href="#">Mostrar todos</a></div>
@@ -58,7 +61,9 @@
                 </div>
             </div>
         </div>
+        <include src="includes/footer.html"></include>
     </div>
+</main>
 </body>
 
 </html>
