@@ -1,195 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
 <style>
-    :root{
-    --color-5: #128C80;
-    --color-6: #15a597;
-    --color-7: #1bc0b0;
+    :root {
+        --color-5: #128C80;
+        --color-6: #15a597;
+        --color-7: #1bc0b0;
     }
+
     @import url('https://fonts.googleapis.com/css2?family=Damion&family=Homenaje&family=Josefin+Sans:wght@300;400&family=Kanit:wght@300&family=Mohave:wght@300&family=Oswald:wght@200&family=Space+Grotesk&display=swap');
-        body{
-            background-color: #128C80;;
-            font-family: 'Kanit', sans-serif;
-        }
-        .aside{
-            width: 20rem;
-            height: 100%;
-        }
-        .apartados{
-            width:100%;
-            border-radius: 10px;
-            background-color: #15a597;
-            padding-top: 10px;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            padding-left: 10px;
-        }
-            #logo{
-                width: 50px;
-                height: 50px;
-            }
-            #iconoInicio{
-                width: 30px;
-                height: 30px;
-                margin-top: 0px;
-            }
-            #inicio{
-                color: #FFF;
-                cursor:pointer;
-                display: flex;
-                align-items: center;
-            }
-            #inicio:hover{
-                color: #000;
-            }
-            #iconoBuscar{
-                width: 25px;
-                height: 25px;
-            }
-            #buscar{
-                color: #FFF;
-                cursor:pointer;
-                display: flex;
-                align-items: center;
-            }
-            #buscar:hover{
-                color: #000;
-            }
-        .biblioteca{
-            width:100%;
-            border-radius: 10px;
-            background-color: #15a597;
-            padding-top: 2px;
-            padding-bottom: 15px;
-            padding-left: 8px;
-        }
-            #iconoBiblioteca{
-                width: 25px;
-                height: 25px;
-            }
-            #tuBiblioteca{
-                color: #FFF;
-                cursor:pointer;
-                display: flex;
-                align-items: center;
-            }
-            #tuBiblioteca:hover{
-                color: #000;
-            }
-        .crearLista{
-            border-radius: 10px;
-            color: #FFF;
-            background-color: #1bc0b0;
-            margin-right: 20px;
-            margin-left: 5px;
-            margin-bottom: 10px;
-            padding-top: 10px;
-            padding-left: 5px;
-            padding-bottom: 10px;
-            font-size: 15px;
-        }
-        #botonCrearLista{
-            border:none;
-            cursor:pointer;
-            height: 20px;
-            width: 80px;
-            padding-top: 5px;
-            padding-left: 5px;
-            padding-right: 5px;
-            color:#FFF;
-            text-align: center;
-            background-color:#128C80;
-            border-radius: 30px;
-        }
-        #botonCrearLista:hover{
-            transition: transform 0.1s;
-            transform: scale(1.1);
-        }
 
-        .explorarPodcasts{
-            border-radius: 10px;
-            color:#FFF;
-            background-color: #1bc0b0;
-            margin-right: 20px;
-            margin-left: 5px;
-            padding-top: 10px;
-            padding-left: 5px;
-            padding-bottom: 10px;
-            font-size: 15px;
-        }
-        #botonPodcasts{
-            border:none;
-            cursor:pointer;
-            height: 20px;
-            width: 130px;
-            padding-top: 5px;
-            padding-left: 5px;
-            padding-right: 5px;
-            color:#FFF;
-            text-align: center;
-            background-color:#128C80;
-            border-radius: 30px;
-        }
-        #botonPodcasts:hover{
-            transition: transform 0.1s;
-            transform: scale(1.1);
-        }
-        .footer{
-            margin-top: 25px;
-            font-size: 11px;
-            color:#FFF;
-            background-color: #15a597;
+    body {
 
-        }
-        #botonIdioma{
-            color:#128C80;
-            border: 1px solid;
-            border-color: #000000;
-            cursor:pointer;
-            height: 20px;
-            width: 120px;
-            padding-top: 5px;
-            text-align: center;
-            background-color: #EBE4E6;
-            border-radius: 30px;
-        }
-        #botonIdioma:hover{
-            transition: transform 0.1s;
-            transform: scale(1.1);
-            border-color: #128C80;
-        }
+        background-color: #128C80;
+        font-family: Arial, Helvetica, sans-serif;
 
+        background-color: #128C80;
 
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .aside {
+        width: 20rem;
+        height: 100%;
+    }
+
+    .apartados {
+        width: 100%;
+        border-radius: 10px;
+        background-color: #15a597;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #iconoInicio {
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+    }
+
+    #inicio {
+        color: #FFF;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    #inicio:hover {
+        color: #000;
+    }
+
+    #iconoBuscar {
+        width: 25px;
+        height: 25px;
+    }
+
+    #buscar {
+        color: #FFF;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    #buscar:hover {
+        color: #000;
+    }
+
+    .biblioteca {
+        width: 100%;
+        border-radius: 10px;
+        background-color: #15a597;
+        padding-top: 2px;
+        padding-bottom: 15px;
+        padding-left: 8px;
+    }
+
+    #iconoBiblioteca {
+        width: 25px;
+        height: 25px;
+    }
+
+    #tuBiblioteca {
+        color: #FFF;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    #tuBiblioteca:hover {
+        color: #000;
+    }
+
+    .crearLista {
+        border-radius: 10px;
+        color: #FFF;
+        background-color: #1bc0b0;
+        margin-right: 20px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #botonCrearLista {
+        border: none;
+        cursor: pointer;
+        height: 20px;
+        width: 80px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #FFF;
+        text-align: center;
+        background-color: #128C80;
+        border-radius: 30px;
+    }
+
+    #botonCrearLista:hover {
+        transition: transform 0.1s;
+        transform: scale(1.1);
+    }
+
+    .explorarPodcasts {
+        border-radius: 10px;
+        color: #FFF;
+        background-color: #1bc0b0;
+        margin-right: 20px;
+        margin-left: 5px;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #botonPodcasts {
+        border: none;
+        cursor: pointer;
+        height: 20px;
+        width: 130px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #FFF;
+        text-align: center;
+        background-color: #128C80;
+        border-radius: 30px;
+    }
+
+    #botonPodcasts:hover {
+        transition: transform 0.1s;
+        transform: scale(1.1);
+    }
+
+    .footer {
+        margin-top: 25px;
+        font-size: 11px;
+        color: #FFF;
+        background-color: #15a597;
+
+    }
+
+    #botonIdioma {
+        color: #128C80;
+        border: 1px solid;
+        border-color: #000000;
+        cursor: pointer;
+        height: 20px;
+        width: 120px;
+        padding-top: 5px;
+        text-align: center;
+        background-color: #EBE4E6;
+        border-radius: 30px;
+    }
+
+    #botonIdioma:hover {
+        transition: transform 0.1s;
+        transform: scale(1.1);
+        border-color: #128C80;
+    }
 </style>
+
 <body>
-        <div class="aside">
-                <div class="apartados">
-                    <img id="logo" src="https://cdn.icon-icons.com/icons2/2389/PNG/512/apple_music_logo_icon_145488.png">
-                    <p id="inicio"><img id="iconoInicio" src="https://cdn.icon-icons.com/icons2/1673/PNG/512/homeoutline_110882.png"><strong>Inicio</strong></p>
-                    <p id="buscar"><img id="iconoBuscar" src="https://cdn-icons-png.flaticon.com/512/2531/2531409.png"><strong>Buscar</strong></p>
-                </div>
-                <div class="biblioteca">
-                    <p id="tuBiblioteca"><img id="iconoBiblioteca" src="https://cdn-icons-png.flaticon.com/512/2908/2908601.png"><strong>Tu biblioteca</strong></p>
-                    <div class="crearLista">Crea tu primera lista
-                        <p>Es muy fácil, y te echaremos una mano.</p>
-                        <div id="botonCrearLista">Crear lista</div>
-                    </div>
-                    <div class="explorarPodcasts">Encuentra podcasts que quieras seguir
-                        <p>Te avisaremos cuando salgan nuevos episodios</p>
-                        <div id="botonPodcasts">Explorar pódcasts</div>
-                    </div>
-                    <div class="footer">Legal • Centro de Privacidad • Politica de privacidad
-                        <p>Configuracion de cookies • Informacion sobre los anuncios</p>
-                        <p>Accesibilidad</p>
-                        <p>Cookies</p>
-                        <div id="botonIdioma"><strong>Español de España</strong></div>
-                    </div>
-                </div>
+    <div class="aside">
+        <div class="apartados">
+            <img id="logo" src="https://cdn.icon-icons.com/icons2/2389/PNG/512/apple_music_logo_icon_145488.png">
+            <p id="inicio"><img id="iconoInicio"
+                    src="https://cdn.icon-icons.com/icons2/1673/PNG/512/homeoutline_110882.png"><strong>Inicio</strong>
+            </p>
+            <p id="buscar"><img id="iconoBuscar"
+                    src="https://cdn-icons-png.flaticon.com/512/2531/2531409.png"><strong>Buscar</strong></p>
         </div>
+        <div class="biblioteca">
+            <p id="tuBiblioteca"><img id="iconoBiblioteca"
+                    src="https://cdn-icons-png.flaticon.com/512/2908/2908601.png"><strong>Tu biblioteca</strong></p>
+            <div class="crearLista">Crea tu primera lista
+                <p>Es muy fácil, y te echaremos una mano.</p>
+                <div id="botonCrearLista">Crear lista</div>
+            </div>
+            <div class="explorarPodcasts">Encuentra podcasts que quieras seguir
+                <p>Te avisaremos cuando salgan nuevos episodios</p>
+                <div id="botonPodcasts">Explorar pódcasts</div>
+            </div>
+            <div class="footer">Legal • Centro de Privacidad • Politica de privacidad
+                <p>Configuracion de cookies • Informacion sobre los anuncios</p>
+                <p>Accesibilidad</p>
+                <p>Cookies</p>
+                <div id="botonIdioma"><strong>Español de España</strong></div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>

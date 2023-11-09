@@ -17,14 +17,22 @@
     color: white;
 }
 body{
+    display: flex;
     overflow: hidden;
     background-color: var(--color-5);
-    width: 72vw;
+}
+main{
+    overflow-y: scroll;
+    
+    width: 100vw;
     height: 100vh;
-    margin-left: 28%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
+}
+.inicio{
+    margin-bottom: 100px;
 }
 .top{
     display: flex;
@@ -96,7 +104,6 @@ i{
 i:hover{
     transform: scale(1.05);
 }
-
 @keyframes subir {
     0%{
         transform:translateY(20px);
