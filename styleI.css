@@ -19,10 +19,11 @@
 body{
     display: flex;
     overflow: hidden;
+    background-color: var(--color-5);
 }
 main{
     overflow-y: scroll;
-    background-color: var(--color-5);
+    
     width: 100vw;
     height: 100vh;
     padding: 10px;
