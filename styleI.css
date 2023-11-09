@@ -28,9 +28,10 @@ main{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
 }
 .inicio{
-    margin-left: 28%;
+    margin-bottom: 100px;
 }
 .top{
     display: flex;
