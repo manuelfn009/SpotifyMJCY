@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+
 <style>
     :root {
   --color-1: #FA6900;
@@ -15,26 +22,38 @@
     color: var(--color-2);
 }
 
-.secciones-podcasts{
-    height: 10rem;
-    width: 100%;
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: .5rem;
 }
+
 main{
+    border-radius: 1rem;
+    top: 0;
     width: 100%;
     height: auto;
     background-color: var(--color-5);
+    background-attachment: fixed;
     gap: 4rem;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
 }
 
 section.secciones-podcasts{
-    height: 18rem;
     width: 98%;
     gap: 1.5rem;
 
 }
 
 .secciones-podcasts header{
-    width: 95%;
+    width: 100%;
     height: 10%;
     justify-content: space-between;
     user-select: none;
@@ -67,6 +86,8 @@ section.secciones-podcasts{
 .container-cartas{
     height: 90%;
     gap: 1rem;
+    width: 100%;
+    justify-content: start;
 }
 
 .carta-podcast{
@@ -83,6 +104,12 @@ section.secciones-podcasts{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+a.link-carta{
+    padding: 0;
+    transform: translateY(-.8rem);
+    height: 100%;
+    text-decoration: none;
+}
 
 .carta-podcast img{
     height: 10rem;
@@ -102,33 +129,73 @@ section.secciones-podcasts{
 }
 
 </style>
-<main class="columna centrado">
+</head>
+<body class="">
+    <include src="../includes/aside.html"></include>
+<main class="columna">
+    <include src="../includes/header.html"></include>
     <section class="secciones-podcasts columna centrado">
         <header class="centrado">
             <h3>Podcasts más escuchados</h3>
             <h4>Mostrar más</h4>
         </header>
         <div class="container-cartas centrado">
-            <div class="carta-podcast centrado columna">
-                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac">
-                <h5>The Wild Project</h5>
-                <h6>Jordi Wild</h6>
-            </div>
+            <a href="podcast.html" class="link-carta">
+                <div class="carta-podcast centrado columna">
+                    <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac">
+                    <h5>The Wild Project</h5>
+                    <h6>Jordi Wild</h6>
+                </div>
+            </a>
+            <a href="podcast.html" class="link-carta">
             <div class="carta-podcast centrado columna">
                 <img src="https://i.scdn.co/image/ab67656300005f1fc2351164a0cda7ecbe34584f">
                 <h5>Perfectamente</h5>
                 <h6>Aretha Fusté</h6>
             </div>
+        </a>
+        <a href="podcast.html" class="link-carta">
             <div class="carta-podcast centrado columna">
                 <img src="https://i.scdn.co/image/ab67656300005f1fa0d1decbc0cb8dc40a8776d3">
                 <h5>Tómatelo con Vino</h5>
                 <h6>Tómatelo con Vino</h6>
             </div>
+        </a>
+        <a href="podcast.html" class="link-carta">
             <div class="carta-podcast centrado columna">
                 <img src="https://i.scdn.co/image/ab67656300005f1f3c5a75e1765779b835bf8c80">
                 <h5>El podcast de mariana...</h5>
                 <h6>Mariana Rojas Estopé </h6>
             </div>
+        </a>
+        <a href="podcast.html" class="link-carta">
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac">
+                <h5>The Wild Project</h5>
+                <h6>Jordi Wild</h6>
+            </div>
+        </a>
+        <a href="podcast.html" class="link-carta">
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc2351164a0cda7ecbe34584f">
+                <h5>Perfectamente</h5>
+                <h6>Aretha Fusté</h6>
+            </div>
+        </a>
+        <a href="podcast.html" class="link-carta">
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1fa0d1decbc0cb8dc40a8776d3">
+                <h5>Tómatelo con Vino</h5>
+                <h6>Tómatelo con Vino</h6>
+            </div>
+        </a>
+        <a href="podcast.html" class="link-carta">
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f3c5a75e1765779b835bf8c80">
+                <h5>El podcast de mariana...</h5>
+                <h6>Mariana Rojas Estopé </h6>
+            </div>
+        </a>
         </div>
     </section>
     <section class="secciones-podcasts columna centrado">
@@ -157,6 +224,27 @@ section.secciones-podcasts{
                 <h5>2+1 by Draftead...</h5>
                 <h6>Spotify Studios</h6>
             </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f9ec4dc97b4d3e1d6160d7b7f">
+                <h5>No son once, co...</h5>
+                <h6>AS Audio</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f3bf7f19ff4d0d4ffb83cf06b">
+                <h5>Explicao</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f75264acacd65e4c81ded2412">
+                <h5>Dando vueltas</h5>
+                <h6>Celia Castle</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://i.scdn.co/image/ab67656300005f1f259ffa5f37133dfeb405ae4b">
+                <h5>2+1 by Draftead...</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+        </div>
     </section>
     
     <section class="secciones-podcasts columna centrado">
@@ -185,5 +273,31 @@ section.secciones-podcasts{
                 <h5>2+1 by Draftead...</h5>
                 <h6>Spotify Studios</h6>
             </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg">
+                <h5>No son once, co...</h5>
+                <h6>AS Audio</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/3e8acf88a1ae408d85f65630d90b1d73.jpeg">
+                <h5>Explicao</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/d951a2d590194722bbfffe2a99ab0e45.jpeg">
+                <h5>Dando vueltas</h5>
+                <h6>Celia Castle</h6>
+            </div>
+            <div class="carta-podcast centrado columna">
+                <img src="https://t.scdn.co/images/ddc7cce63cdf49b5a632fb90872929e3.jpeg">
+                <h5>2+1 by Draftead...</h5>
+                <h6>Spotify Studios</h6>
+            </div>
+        </div>
     </section>
+    <include src="../includes/footer.html"></include>
+    <script src="https://unpkg.com/htmlincludejs"></script>
+
 </main>
+</body>
+</html>

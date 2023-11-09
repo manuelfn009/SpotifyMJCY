@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+
 <style>
     :root {
   --color-1: #FA6900;
@@ -23,13 +30,16 @@ body{
     display: flex;
     justify-content: center;
     gap: .5rem;
+    padding: .5rem;
 }
 
 main{
+    border-radius: 1rem;
     top: 0;
     width: 100%;
     height: auto;
-    background-image: linear-gradient(0deg, rgba(18,140,128,1) 80%, rgba(213,153,0,1) 100%, rgba(0,212,255,1) 100%);;
+    background-color: var(--color-5);
+    background-attachment: fixed;
     gap: 4rem;
     overflow-y: scroll;
     display: flex;
@@ -92,6 +102,7 @@ section {
     border-radius: 20px;
     transform: scale(1);
     transition: border .4s, transform .4s;
+    cursor: pointer;
 }
 
 .ops button:hover{
@@ -104,6 +115,7 @@ section {
     text-align: center;
     font-size: 2em;
     user-select: none;
+    cursor: pointer;
     transition: color .4s, transform .4s;
 }
 
@@ -116,6 +128,8 @@ section {
     gap: 1rem;
     display: flex;
     flex-direction: column;
+    text-align: justify;
+
 }
 
 .descripcion h4{
@@ -126,7 +140,85 @@ section {
     color: var(--color-2);
 }
 
+.descripcion .valoracion, .tematicas div{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 7rem;
+    padding: .3rem;
+    border-radius: 30px;
+    text-align: center;
+    font-size: .9em;
+    transform: scale(1);
+    transition:  background-color .4s, transform .4s;
+    user-select: none;
+}
+
+.descripcion .valoracion:hover, .tematicas div:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.09);
+}
+
+.tematicas{
+    gap: 1rem;
+    justify-content: start;
+}
+
+.tematicas div{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:.6rem ;
+    padding-right: .6rem;
+}
+
+.episodios h2{
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.episodio {
+    background-color: transparent;
+    border-top: solid 2px var(--color-4);
+    gap: 2rem;
+    padding:1rem;
+    transition: .4s background-color;
+}
+
+.episodio:hover { 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.episodio img{
+    height: 7rem;
+    margin-bottom: auto;
+    border-radius: 20px;
+}
+.episodio .adds{
+    width: 100%;
+    gap: 1rem;
+   justify-content: start;
+}
+
+.adds .play{
+    padding: .4rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    border-radius: 100%;
+    color: #222;
+    background-color: var(--color-2);
+    border:  0;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .4s transform;
+}
+
+.adds .play:hover{
+    transform: scale(1.2);
+}
+
 </style>
+</head>
 <body class="">
     <include src="../includes/aside.html"></include>
     <main class="columna">
@@ -146,7 +238,7 @@ section {
             </div>
             <div class="descripcion">
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum </p>
                 <div class="valoracion">4,9 ☆(56,8mil)</div>
                 <div class="tematicas centrado">
                     <div>La sociedad</div>
@@ -157,86 +249,102 @@ section {
         </section>
         <section class="episodios centrado columna">
             <h2>Todos los episodios</h2>
-            <div class="episodio">
+            <div class="episodio centrado">
                 <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-                <div class="centrado columna">
+                <div class="centrado columna descripcion">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                    <div>
-                        <button class="play">
+                    <p>orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsumorci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div class="centrado adds">
+                        <button class="play centrado">
                             ▶
                         </button>
-                        <p></p>
+                        <p>2h 23min</p>
                     </div>
                 </div>
             </div>
-            <div class="episodio">
+            <div class="episodio centrado">
                 <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-                <div class="centrado columna">
+                <div class="centrado columna descripcion">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                    <div>
-                        <button class="play">
+                    <p>orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsumorci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div class="centrado adds">
+                        <button class="play centrado">
                             ▶
                         </button>
-                        <p></p>
+                        <p>2h 23min</p>
                     </div>
                 </div>
             </div>
-            <div class="episodio">
+            <div class="episodio centrado">
                 <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-                <div class="centrado columna">
+                <div class="centrado columna descripcion">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                    <div>
-                        <button class="play">
+                    <p>orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsumorci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div class="centrado adds">
+                        <button class="play centrado">
                             ▶
                         </button>
-                        <p></p>
+                        <p>2h 23min</p>
                     </div>
                 </div>
             </div>
-            <div class="episodio">
+            <div class="episodio centrado">
                 <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-                <div class="centrado columna">
+                <div class="centrado columna descripcion">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                    <div>
-                        <button class="play">
+                    <p>orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsumorci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div class="centrado adds">
+                        <button class="play centrado">
                             ▶
                         </button>
-                        <p></p>
+                        <p>2h 23min</p>
                     </div>
                 </div>
             </div>
-            <div class="episodio">
+            <div class="episodio centrado">
                 <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-                <div class="centrado columna">
+                <div class="centrado columna descripcion">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                    <div>
-                        <button class="play">
+                    <p>orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsumorci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div class="centrado adds">
+                        <button class="play centrado">
                             ▶
                         </button>
-                        <p></p>
+                        <p>2h 23min</p>
                     </div>
                 </div>
             </div>
-            <div class="episodio">
+            <div class="episodio centrado">
                 <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-                <div class="centrado columna">
+                <div class="centrado columna descripcion">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                    <div>
-                        <button class="play">
+                    <p>orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsumorci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div class="centrado adds">
+                        <button class="play centrado">
                             ▶
                         </button>
-                        <p></p>
+                        <p>2h 23min</p>
                     </div>
                 </div>
             </div>
+            <div class="episodio centrado">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
+                <div class="centrado columna descripcion">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
+                    <p>orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsumorci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div class="centrado adds">
+                        <button class="play centrado">
+                            ▶
+                        </button>
+                        <p>2h 23min</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <include src="../includes/footer.html"></include>
         <script src="https://unpkg.com/htmlincludejs"></script>
-</body>
+
 </main>
+</body>
+</html>
