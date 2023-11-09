@@ -15,13 +15,29 @@
     --color-6: #15a597;
     }
 
+    *{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
     body {
-        width: 72%;
-        height: 100%;
-        margin-left: 28%;
+        width: 100vw;
+        height: 100vh;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #128C80;
         color: white;
+        display: flex;
+        overflow: hidden;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        overflow-y: scroll;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
     }
 
     .container-explorar {
@@ -59,25 +75,31 @@
     }
 </style>
 <body>
-    <div class="container">
-        <p style="font-size: 20px; font-weight: bolder;">Explorar todo</p>
-        <div class="container-explorar">
-            <div class="explorar" style="background-color: #2d9779; overflow: hidden;">Podcast <img class="img-podcast" src="Images/podcast.jpeg" alt=""></div>
-            <div class="explorar" style="background-color: #1E3264;">Especialmente para ti</div>
-            <div class="explorar" style="background-color: #8D67AB;">Lista de éxitos</div>
-            <div class="explorar" style="background-color: #E8115B;">Novedades</div>
-            <div class="explorar" style="background-color: #8D67AB;">Descubrir</div>
-            <div class="explorar" style="background-color: #7358FF;">Eventos en directo</div>
-            <div class="explorar" style="background-color: #E1118B;">Latina</div>
-            <div class="explorar" style="background-color: #F037A5;">Estado de animo</div>
-            <div class="explorar" style="background-color: #9CF0E1;">Pop</div>
-            <div class="explorar" style="background-color: #D7F27D;">Flamenco</div>
-            <div class="explorar" style="background-color: #8D67AB;">Relax</div>
-            <div class="explorar" style="background-color: #7358FF;">Rock</div>
-            <div class="explorar" style="background-color: #7358FF;">Ejercicio</div>
-            <div class="explorar" style="background-color: #AF2896;">Hip Hop</div>
-            <div class="explorar" style="background-color: #EB1E32;">Dance y electronica</div>
+    <include src="../includes/aside.html"></include>
+    <main>
+        <include src="../includes/header.html"></include>
+        <div class="container">
+            <p style="font-size: 20px; font-weight: bolder;">Explorar todo</p>
+            <div class="container-explorar">
+                <div class="explorar" style="background-color: #2d9779; overflow: hidden;">Podcast <img class="img-podcast" src="Images/podcast.jpeg" alt=""></div>
+                <div class="explorar" style="background-color: #1E3264;">Especialmente para ti</div>
+                <div class="explorar" style="background-color: #8D67AB;">Lista de éxitos</div>
+                <div class="explorar" style="background-color: #E8115B;">Novedades</div>
+                <div class="explorar" style="background-color: #8D67AB;">Descubrir</div>
+                <div class="explorar" style="background-color: #7358FF;">Eventos en directo</div>
+                <div class="explorar" style="background-color: #E1118B;">Latina</div>
+                <div class="explorar" style="background-color: #F037A5;">Estado de animo</div>
+                <div class="explorar" style="background-color: #9CF0E1;">Pop</div>
+                <div class="explorar" style="background-color: #D7F27D;">Flamenco</div>
+                <div class="explorar" style="background-color: #8D67AB;">Relax</div>
+                <div class="explorar" style="background-color: #7358FF;">Rock</div>
+                <div class="explorar" style="background-color: #7358FF;">Ejercicio</div>
+                <div class="explorar" style="background-color: #AF2896;">Hip Hop</div>
+                <div class="explorar" style="background-color: #EB1E32;">Dance y electronica</div>
+            </div>
         </div>
-    </div>
+        <include src="../includes/footer.html"></include>
+    </main>
+    <script src="https://unpkg.com/htmlincludejs"></script>
 </body>
 </html>
