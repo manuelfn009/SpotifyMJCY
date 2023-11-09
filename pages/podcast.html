@@ -16,11 +16,22 @@
     position: relative;
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    
+    gap: .5rem;
+}
+
 main{
+    top: 0;
     width: 100%;
     height: auto;
     background-image: linear-gradient(0deg, rgba(18,140,128,1) 80%, rgba(213,153,0,1) 100%, rgba(0,212,255,1) 100%);;
     gap: 4rem;
+    overflow-y: scroll;
 }
 
 .centrado{
@@ -68,128 +79,162 @@ section {
     justify-content: start;
     width: 100%;
     gap: 1rem;
+    margin-bottom:1rem ;
 }
+
 .ops button{
     background-color: transparent;
     border: 0;
     border: solid 1px var(--color-2);
     padding: 0.2rem 1rem;
     border-radius: 20px;
+    transform: scale(1);
+    transition: border .4s, transform .4s;
+}
 
+.ops button:hover{
+    border: solid 1px #adadad;
+    transform: scale(1.2);
 }
 
 .ops a{
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem) scale(1);
     text-align: center;
     font-size: 2em;
+    user-select: none;
+    transition: color .4s, transform .4s;
+}
 
+.ops a:hover{
+    color: #adadad;
+    transform: scale(1.2) translateY(-0.5rem);
+}
+
+.descripcion{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion h4{
+    font-size: 1.2em
+}
+
+.descripcion p{
+    color: var(--color-2);
 }
 
 </style>
-<main class="columna centrado">
-    <section class="portada centrado">
-        <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-        <div class="titulo">
-            <h6>Pódcast</h6>
-            <h2>The Wild Project</h2>
-            <h4>Jordi Wild</h4>
-        </div>
-    </section>
-    <section class="presentacion centrado columna">
-        <div class="ops centrado">
-            <button>Seguir</button>
-            <a class="centrado">...</a>
-        </div>
-        <div class="descripcion">
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-            <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-            <div class="valoracion">4,9 ☆(56,8mil)</div>
-            <div class="tematicas centrado">
-                <div>La sociedad</div>
-                <div>Deportes y ocio</div>
-                <div>Comedia</div>
-            </div>
-        </div>
-    </section>
-    <section class="episodios centrado columna">
-        <h2>Todos los episodios</h2>
-        <div class="episodio">
+<body class="">
+    <include src="../includes/aside.html"></include>
+    <main class="columna centrado">
+        <include src="../includes/header.html"></include>
+        <section class="portada centrado">
             <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-            <div class="centrado columna">
+            <div class="titulo">
+                <h6>Pódcast</h6>
+                <h2>The Wild Project</h2>
+                <h4>Jordi Wild</h4>
+            </div>
+        </section>
+        <section class="presentacion centrado columna">
+            <div class="ops centrado">
+                <button>Seguir</button>
+                <a class="centrado">...</a>
+            </div>
+            <div class="descripcion">
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
                 <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                <div>
-                    <button class="play">
-                        ▶
-                    </button>
-                    <p></p>
+                <div class="valoracion">4,9 ☆(56,8mil)</div>
+                <div class="tematicas centrado">
+                    <div>La sociedad</div>
+                    <div>Deportes y ocio</div>
+                    <div>Comedia</div>
                 </div>
             </div>
-        </div>
-        <div class="episodio">
-            <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-            <div class="centrado columna">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                <div>
-                    <button class="play">
-                        ▶
-                    </button>
-                    <p></p>
+        </section>
+        <section class="episodios centrado columna">
+            <h2>Todos los episodios</h2>
+            <div class="episodio">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
+                <div class="centrado columna">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
+                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div>
+                        <button class="play">
+                            ▶
+                        </button>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="episodio">
-            <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-            <div class="centrado columna">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                <div>
-                    <button class="play">
-                        ▶
-                    </button>
-                    <p></p>
+            <div class="episodio">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
+                <div class="centrado columna">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
+                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div>
+                        <button class="play">
+                            ▶
+                        </button>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="episodio">
-            <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-            <div class="centrado columna">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                <div>
-                    <button class="play">
-                        ▶
-                    </button>
-                    <p></p>
+            <div class="episodio">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
+                <div class="centrado columna">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
+                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div>
+                        <button class="play">
+                            ▶
+                        </button>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="episodio">
-            <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-            <div class="centrado columna">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                <div>
-                    <button class="play">
-                        ▶
-                    </button>
-                    <p></p>
+            <div class="episodio">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
+                <div class="centrado columna">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
+                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div>
+                        <button class="play">
+                            ▶
+                        </button>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="episodio">
-            <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
-            <div class="centrado columna">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
-                <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
-                <div>
-                    <button class="play">
-                        ▶
-                    </button>
-                    <p></p>
+            <div class="episodio">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
+                <div class="centrado columna">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
+                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div>
+                        <button class="play">
+                            ▶
+                        </button>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="episodio">
+                <img src="https://i.scdn.co/image/ab67656300005f1fc02ab919572e43a5911314ac" alt="The Wild Project">
+                <div class="centrado columna">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec </h4>
+                    <p>utrum tincidunt quam, eget imperdiet mauris pulvinar sit amet. Sed tortor urna, aliquet et quam a, feugiat aliquam neque. Donec auctor orci quis nibh hendrerit, a aliquet lacus vehicula. Proin eleifend bibendum ligula sit amet tincidunt. Cras sit amet augue ex. Nulla purus magna, rhoncus non consequat at, fringilla sed quam. Mauris ac lectus tincidunt, euismod diam eu, congue augue. Curabitur eu arcu vitae lacus egestas rhoncus. Aenean in est nec augue mollis hendrerit vel vitae orci. Etiam sollicitudin, dui id efficitur tempus, ante lacus sagittis erat, non aliquet est ligula sed augue. Lorem ipsum</p>
+                    <div>
+                        <button class="play">
+                            ▶
+                        </button>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <include src="../includes/footer.html"></include>
+        <script src="https://unpkg.com/htmlincludejs"></script>
+</body>
 </main>
