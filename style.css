@@ -530,3 +530,103 @@ footer {
       margin-top: 60px;
       margin-left: 85px;
   }
+
+  /*CSS index.html*/
+  .bodyini{
+    display: flex;
+    overflow: hidden;
+    background-color: var(--color-5);
+}
+.mainini{
+    overflow-y: scroll;
+    
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.inicio{
+    margin-bottom: 100px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.imgini{
+    border-radius: 10px;
+}
+.imagen{
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px ;
+    margin-top: 20px;
+    font-size: 10px;
+    width: 17%;
+    padding: 15px;
+    height: 250px;
+    background-color: var(--color-6);
+}
+.imagen h2{
+    color: #dcd;
+}
+
+.imagen:hover{
+    background-color: #1bc0b0;
+    cursor: pointer;
+}
+.enlaceini{
+    text-decoration: none;
+    text-align: left;
+}
+.enlaceini:hover{
+    text-decoration: underline;
+}
+.play{
+   color: transparent;
+   position: absolute;
+   height: 40px;
+   width: 40px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.imagen:hover .play{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 110px;
+    padding-left: 18px;
+    padding-top: 15px;
+    font-size: 30px;
+    animation: subir 0.5s;
+}
+
+.play:hover{
+    transform: scale(1.05);
+}
+@keyframes subir {
+    0%{
+        transform:translateY(20px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
