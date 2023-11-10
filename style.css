@@ -289,7 +289,8 @@ main.podcast .portada{
  justify-content: start;
 }
 
-.adds .play{
+.adds button.play{
+  position: relative;
   padding: .4rem;
   padding-left: .6rem;
   padding-right: .6rem;
