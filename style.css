@@ -345,8 +345,8 @@ footer {
 }
 
 .container-socials {
-  width: 30%;
-  height: 200px;
+  width: 20%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -355,7 +355,7 @@ footer {
 }
 
 .container-socials img{
-  height: 40px;
+  height: 20px;
   margin-left: 20px;
 }
 
@@ -495,7 +495,7 @@ footer {
   }
 
   .container p, .container-explorar {
-      margin-left: 3rem;
+      margin-left: 5rem;
   }
   .container-explorar {
       display: flex;
