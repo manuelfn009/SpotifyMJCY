@@ -647,6 +647,10 @@ footer {
             width: 20rem;
             height: 100%;
         }
+
+        .aside a{
+          text-decoration: none;
+        }
         .apartados{
             width:100%;
             border-radius: 10px;
