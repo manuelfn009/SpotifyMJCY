@@ -593,7 +593,7 @@ footer {
 .enlaceini:hover{
     text-decoration: underline;
 }
-.play{
+#play{
    color: transparent;
    position: absolute;
    height: 40px;
@@ -603,7 +603,7 @@ footer {
    align-items: center;
 }
 
-.imagen:hover .play{
+.imagen:hover #play{
     display: block;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -616,7 +616,7 @@ footer {
     animation: subir 0.5s;
 }
 
-.play:hover{
+#play:hover{
     transform: scale(1.05);
 }
 @keyframes subir {
